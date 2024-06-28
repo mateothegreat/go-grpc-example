@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "github.com/cmdbstream/protos";
+
+package protos;
+
+service ServerService {
+  rpc SayHello(ServerRequest) returns (ServerResponse) {}
+}
+
+message ServerRequest {
+  string data = 1;
+}
+
+message ServerResponse {
+  bool success = 1;
+  string message = 2;
+}
