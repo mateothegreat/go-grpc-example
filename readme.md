@@ -1,10 +1,10 @@
 # Golang gRPC example
 
-This project is divided into two parts:
+This project is divided into three parts:
 
-* [protos](protos)
-* [server](server)
-* [client](client)
+* [protos](protos) (the protobuf definitions)
+* [server](server) (the server implementation)
+* [client](client) (the client implementation)
 
 These are separated into two different packages to make it easier to publish modules in the future for re-usability.
 
