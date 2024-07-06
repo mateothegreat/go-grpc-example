@@ -11,7 +11,7 @@ These are separated into two different packages to make it easier to publish mod
 ## Generate proto files
 
 ```bash
-cd pkg/protos
+cd protos
 make compile
 ```
 
@@ -20,13 +20,13 @@ make compile
 Fist, start the server:
 
 ```bash
-cd pkg/server
+cd server
 go test -v
 ```
 
 Second, start the client:
 
 ```bash
-cd pkg/client
+cd client
 go test -v
 ```
