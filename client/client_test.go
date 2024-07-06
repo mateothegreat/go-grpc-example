@@ -5,11 +5,10 @@ import (
 	"log"
 	"testing"
 
-	"mateothegreat/go-grpc-example/protos"
+	"github.com/mateothegreat/go-grpc-example/protos"
 )
 
 func TestNewClient(t *testing.T) {
-
 	client, err := NewClient("localhost:8888")
 	if err != nil {
 		t.Errorf("failed to create client: %v", err)

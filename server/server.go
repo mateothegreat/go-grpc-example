@@ -21,8 +21,8 @@ func (s *Server) SayHello(ctx context.Context, in *pb.ServerRequest) (*pb.Server
 	return &pb.ServerResponse{Message: "Hello, World! "}, nil
 }
 
-func NewServer(ctx context.Context) (*Server, error) {
-	lis, err := net.Listen("tcp", "127.0.0.1:8888")
+func NewServer(ctx context.Context, address string) (*Server, error) {
+	lis, err := net.Listen("tcp", address)
 	if err != nil {
 		return nil, fmt.Errorf("failed to listen: %v", err)
 	}
