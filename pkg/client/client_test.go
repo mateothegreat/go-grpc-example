@@ -5,7 +5,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/cmdbstream/protos"
+	"mateothegreat/go-grpc-example/protos"
 )
 
 func TestNewClient(t *testing.T) {

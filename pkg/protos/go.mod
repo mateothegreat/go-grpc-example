@@ -1,4 +1,4 @@
-module github.com/cmdbstream/protos
+module github.com/mateothegreat/go-grpc-example/protos
 
 go 1.22.4
 

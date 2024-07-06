@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/cmdbstream/protos"
+	"github.com/mateothegreat/go-grpc-example/protos"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

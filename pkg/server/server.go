@@ -6,7 +6,8 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/cmdbstream/protos"
+	pb "github.com/mateothegreat/go-grpc-example/protos"
+
 	"google.golang.org/grpc"
 )
 

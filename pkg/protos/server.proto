@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/cmdbstream/protos";
+option go_package = "mateothegreat/go-grpc-example/protos";
 
 package protos;
 
