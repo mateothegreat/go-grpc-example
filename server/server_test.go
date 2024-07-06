@@ -13,7 +13,7 @@ import (
 func TestServer(t *testing.T) {
 	ctx, cancel := context.WithCancel(context.Background())
 
-	_, err := NewServer(ctx, "127.0.0.1:8888")
+	_, err := NewServer(ctx, "0.0.0.0:18880")
 	if err != nil {
 		t.Errorf("failed to create server: %v", err)
 	}

@@ -9,16 +9,18 @@ import (
 )
 
 func TestNewClient(t *testing.T) {
-	client, err := NewClient("localhost:8888")
+	client, err := NewClient("127.0.0.1:18880")
 	if err != nil {
 		t.Errorf("failed to create client: %v", err)
+		return
 	}
 
 	res, err := client.SayHello(context.Background(), &protos.ServerRequest{
 		Data: "Hello, Server!",
-	}, nil)
+	})
 	if err != nil {
 		t.Errorf("failed to call SayHello: %v", err)
+		return
 	}
 
 	log.Printf("Response: %s", res.Message)

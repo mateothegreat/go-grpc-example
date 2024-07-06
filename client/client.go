@@ -11,7 +11,7 @@ import (
 
 func NewClient(server string) (protos.ServerServiceClient, error) {
 	log.Printf("Connecting to server at %s", server)
-	conn, err := grpc.NewClient(server, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.Dial(server, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		return nil, fmt.Errorf("failed to connect to server at %s: %v", server, err)
 	}
