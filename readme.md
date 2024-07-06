@@ -2,9 +2,9 @@
 
 This project is divided into two parts:
 
-* [pkg/protos](pkg/protos)
-* [pkg/server](pkg/server)
-* [pkg/client](pkg/client)
+* [protos](protos)
+* [server](server)
+* [client](client)
 
 These are separated into two different packages to make it easier to publish modules in the future for re-usability.
 
